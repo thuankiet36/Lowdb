@@ -1,0 +1,11 @@
+h1 Activities
+a(href="/todos/create") New
+
+form(action="/todos/search", method="GET")
+  input(type="text", name="q")
+  button Search
+  
+ul
+  each activity in activities
+    li= activity.todo
+
